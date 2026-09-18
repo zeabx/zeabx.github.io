@@ -1,0 +1,939 @@
+     1→import type { Edition } from "./types";
+     2→import { vocab1 } from "./vocab-1";
+     3→
+     4→/**
+     5→ * Edition No. 1 — 16 September 2026
+     6→ * Story: CK Hutchison launches international arbitration against Panama
+     7→ * Based on reporting by Reuters / SCMP / AP / WSJ (Aug 2026), adapted into
+     8→ * written Cantonese (粵文) at a learner-friendly level.
+     9→ */
+    10→export const edition1: Edition = {
+    11→  id: "2026-09-16",
+    12→  date: "Tuesday, 16 September 2026",
+    13→  number: 1,
+    14→  vocab: vocab1,
+    15→  titleEn: "CK Hutchison demands US$1.5 billion from Panama",
+    16→  intro:
+    17→    "A Hong Kong conglomerate is suing the Central American nation of Panama at an international tribunal, after its Supreme Court stripped the company of two ports it had run for nearly 30 years.",
+    18→  sourceNote:
+    19→    "Based on reporting by Reuters, South China Morning Post, AP and WSJ (Feb–Aug 2026), adapted into written Cantonese (粵文) for learners.",
+    20→  topic: "International law · Arbitration · Hong Kong",
+    21→  title: [
+    22→    {
+    23→      text: "長和",
+    24→      chars: [
+    25→        { ch: "長", jp: "coeng4", senses: ["long", "chief (in 長江 Yangtze)"] },
+    26→        { ch: "和", jp: "wo4", senses: ["and", "harmony", "peace"] },
+    27→      ],
+    28→      wordJp: "coeng4 wo4",
+    29→      wordSenses: ["CK Hutchison (Hong Kong conglomerate)"],
+    30→      note: "Short name of CK Hutchison Holdings in Hong Kong media (from 長江 and 和記， its parent firms). You will see it in every HK business story.",
+    31→    },
+    32→    {
+    33→      text: "向",
+    34→      chars: [{ ch: "向", jp: "hoeng3", senses: ["towards", "to (a direction or person)"] }],
+    35→      wordJp: "hoeng3",
+    36→      wordSenses: ["towards", "to"],
+    37→    },
+    38→    {
+    39→      text: "巴拿馬",
+    40→      chars: [
+    41→        { ch: "巴", jp: "baa1", senses: ["phonetic in foreign names"] },
+    42→        { ch: "拿", jp: "naa4", senses: ["to take", "to hold"] },
+    43→        { ch: "馬", jp: "maa5", senses: ["horse"] },
+    44→      ],
+    45→      wordJp: "baa1 naa4 maa5",
+    46→      wordSenses: ["Panama"],
+    47→      note: "Foreign names are usually transliterated character by character — the characters are chosen for sound, not meaning. 馬 (horse) here is just a sound.",
+    48→    },
+    49→    {
+    50→      text: "追討",
+    51→      chars: [
+    52→        { ch: "追", jp: "zeoi1", senses: ["to chase", "to pursue"] },
+    53→        { ch: "討", jp: "tou2", senses: ["to demand", "to discuss"] },
+    54→      ],
+    55→      wordJp: "zeoi1 tou2",
+    56→      wordSenses: ["to pursue and demand (a debt, payment)"],
+    57→      note: "追 = chase after + 討 = demand → chase someone for money you are owed. Featured in today's vocabulary section!",
+    58→    },
+    59→    {
+    60→      text: "15",
+    61→      chars: [{ ch: "15", jp: "sap6 ng5", senses: ["fifteen"] }],
+    62→      wordJp: "sap6 ng5",
+    63→      wordSenses: ["15 — read aloud as 十五 (sap6 ng5)"],
+    64→      isNumber: true,
+    65→      note: "Digits in a newspaper are read out as full Cantonese numbers: 15 = 十五 (sap6 ng5). You already know 五 from Lesson 2!",
+    66→    },
+    67→    {
+    68→      text: "億",
+    69→      chars: [{ ch: "億", jp: "jik1", senses: ["hundred million"] }],
+    70→      wordJp: "jik1",
+    71→      wordSenses: ["100 million"],
+    72→      note: "Chinese counts in big steps: 萬 = 10,000, 億 = 100,000,000. So 15億 = 15 × 100 million = 1.5 billion USD.",
+    73→    },
+    74→    {
+    75→      text: "美元",
+    76→      chars: [
+    77→        { ch: "美", jp: "mei5", senses: ["beautiful", "America (short for 美國)"] },
+    78→        { ch: "元", jp: "jyun4", senses: ["dollar", "currency unit"] },
+    79→      ],
+    80→      wordJp: "mei5 jyun4",
+    81→      wordSenses: ["US dollar"],
+    82→    },
+    83→  ],
+    84→  paragraphs: [
+    85→    // ---------- Paragraph 1 ----------
+    86→    [
+    87→      {
+    88→        text: "香港",
+    89→        chars: [
+    90→          { ch: "香", jp: "hoeng1", senses: ["fragrant"] },
+    91→          { ch: "港", jp: "gong2", senses: ["harbour", "Hong Kong (short form)"] },
+    92→        ],
+    93→        wordJp: "hoeng1 gong2",
+    94→        wordSenses: ["Hong Kong (literally: fragrant harbour)"],
+    95→      },
+    96→      {
+    97→        text: "公司",
+    98→        chars: [
+    99→          { ch: "公", jp: "gung1", senses: ["public", "shared"] },
+   100→          { ch: "司", jp: "si1", senses: ["to manage", "department"] },
+   101→        ],
+   102→        wordJp: "gung1 si1",
+   103→        wordSenses: ["company", "firm"],
+   104→      },
+   105→      {
+   106→        text: "長和",
+   107→        chars: [
+   108→          { ch: "長", jp: "coeng4", senses: ["long", "chief"] },
+   109→          { ch: "和", jp: "wo4", senses: ["and", "harmony"] },
+   110→        ],
+   111→        wordJp: "coeng4 wo4",
+   112→        wordSenses: ["CK Hutchison"],
+   113→      },
+   114→      {
+   115→        text: "喺",
+   116→        chars: [{ ch: "喺", jp: "hai2", senses: ["at", "in", "located at"] }],
+   117→        wordJp: "hai2",
+   118→        wordSenses: ["at / in / to be located at"],
+   119→        note: "CANTONESE-ONLY character! Standard written Chinese uses 在 (zoi6). Whenever you see 喺 you know the text is true written Cantonese. It is one of the most common characters in Hong Kong writing.",
+   120→      },
+   121→      {
+   122→        text: "巴拿馬",
+   123→        chars: [
+   124→          { ch: "巴", jp: "baa1", senses: ["phonetic"] },
+   125→          { ch: "拿", jp: "naa4", senses: ["to take"] },
+   126→          { ch: "馬", jp: "maa5", senses: ["horse"] },
+   127→        ],
+   128→        wordJp: "baa1 naa4 maa5",
+   129→        wordSenses: ["Panama"],
+   130→      },
+   131→      {
+   132→        text: "運河",
+   133→        chars: [
+   134→          { ch: "運", jp: "wan6", senses: ["to transport", "luck"] },
+   135→          { ch: "河", jp: "ho4", senses: ["river"] },
+   136→        ],
+   137→        wordJp: "wan6 ho4",
+   138→        wordSenses: ["canal (transport river)"],
+   139→      },
+   140→      {
+   141→        text: "經營",
+   142→        chars: [
+   143→          { ch: "經", jp: "ging1", senses: ["through", "classics", "to manage"] },
+   144→          { ch: "營", jp: "jing4", senses: ["to operate", "camp"] },
+   145→        ],
+   146→        wordJp: "ging1 jing4",
+   147→        wordSenses: ["to operate / run (a business)"],
+   148→      },
+   149→      {
+   150→        text: "兩個",
+   151→        chars: [
+   152→          { ch: "兩", jp: "loeng5", senses: ["two (before measure words)"] },
+   153→          { ch: "個", jp: "go3", senses: ["general measure word"] },
+   154→        ],
+   155→        wordJp: "loeng5 go3",
+   156→        wordSenses: ["two (of something)"],
+   157→        note: "From your Lesson 2! Cantonese uses 兩 (loeng5), NOT 二 (ji6), when counting with a measure word: 兩個 = two items. 二 is only for digits, dates and maths.",
+   158→      },
+   159→      {
+   160→        text: "港口",
+   161→        chars: [
+   162→          { ch: "港", jp: "gong2", senses: ["harbour"] },
+   163→          { ch: "口", jp: "hau2", senses: ["mouth", "entrance"] },
+   164→        ],
+   165→        wordJp: "gong2 hau2",
+   166→        wordSenses: ["port, harbour"],
+   167→      },
+   168→      { text: "，", punct: true },
+   169→      {
+   170→        text: "做",
+   171→        chars: [{ ch: "做", jp: "zou6", senses: ["to do", "to make", "to work as"] }],
+   172→        wordJp: "zou6",
+   173→        wordSenses: ["to do / make"],
+   174→      },
+   175→      {
+   176→        text: "咗",
+   177→        chars: [{ ch: "咗", jp: "zo2", senses: ["(completed-action particle)"] }],
+   178→        wordJp: "zo2",
+   179→        wordSenses: ["marks a completed action — like English \u201c-ed\u201d"],
+   180→        note: "CANTONESE-ONLY character and the heartbeat of spoken Cantonese! Verb + 咗 = the action is done: 做咗 = did, 食咗 = ate. Featured in today's grammar corner.",
+   181→      },
+   182→      {
+   183→        text: "差不多",
+   184→        chars: [
+   185→          { ch: "差", jp: "caa1", senses: ["to differ", "short of"] },
+   186→          { ch: "不", jp: "bat6", senses: ["not", "no"] },
+   187→          { ch: "多", jp: "do1", senses: ["many", "much"] },
+   188→        ],
+   189→        wordJp: "caa1 bat6 do1",
+   190→        wordSenses: ["almost, nearly"],
+   191→      },
+   192→      {
+   193→        text: "三十年",
+   194→        chars: [
+   195→          { ch: "三", jp: "saam1", senses: ["three (Lesson 2!)"] },
+   196→          { ch: "十", jp: "sap6", senses: ["ten"] },
+   197→          { ch: "年", jp: "nin4", senses: ["year"] },
+   198→        ],
+   199→        wordJp: "saam1 sap6 nin4",
+   200→        wordSenses: ["thirty years"],
+   201→      },
+   202→      { text: "。", punct: true },
+   203→      {
+   204→        text: "今年",
+   205→        chars: [
+   206→          { ch: "今", jp: "gam1", senses: ["now", "this (current)"] },
+   207→          { ch: "年", jp: "nin4", senses: ["year"] },
+   208→        ],
+   209→        wordJp: "gam1 nin4",
+   210→        wordSenses: ["this year"],
+   211→      },
+   212→      {
+   213→        text: "一月",
+   214→        chars: [
+   215→          { ch: "一", jp: "jat1", senses: ["one (Lesson 2!)"] },
+   216→          { ch: "月", jp: "jyut6", senses: ["moon", "month"] },
+   217→        ],
+   218→        wordJp: "jat1 jyut6",
+   219→        wordSenses: ["January (month one)"],
+   220→        note: "Months are simply numbers + 月： 一月 January, 二月 February, 十二月 December. Free vocabulary once you know numbers!",
+   221→      },
+   222→      { text: "，", punct: true },
+   223→      {
+   224→        text: "巴拿馬",
+   225→        chars: [
+   226→          { ch: "巴", jp: "baa1", senses: ["phonetic"] },
+   227→          { ch: "拿", jp: "naa4", senses: ["to take"] },
+   228→          { ch: "馬", jp: "maa5", senses: ["horse"] },
+   229→        ],
+   230→        wordJp: "baa1 naa4 maa5",
+   231→        wordSenses: ["Panama"],
+   232→      },
+   233→      {
+   234→        text: "最高法院",
+   235→        chars: [
+   236→          { ch: "最", jp: "zeoi3", senses: ["most", "-est"] },
+   237→          { ch: "高", jp: "gou1", senses: ["tall", "high"] },
+   238→          { ch: "法", jp: "faat3", senses: ["law", "method"] },
+   239→          { ch: "院", jp: "jyun2", senses: ["institution", "courtyard"] },
+   240→        ],
+   241→        wordJp: "zeoi3 gou1 faat3 jyun2",
+   242→        wordSenses: ["Supreme Court"],
+   243→        note: "法 (law) is the key character of every legal word: 法律 law, 法官 judge, 法庭 courtroom, 法院 court. Learn it once, read it everywhere.",
+   244→      },
+   245→      {
+   246→        text: "裁定",
+   247→        chars: [
+   248→          { ch: "裁", jp: "coi4", senses: ["to judge", "to decide", "to cut"] },
+   249→          { ch: "定", jp: "ding6", senses: ["fixed", "to decide"] },
+   250→        ],
+   251→        wordJp: "coi4 ding6",
+   252→        wordSenses: ["to rule, to adjudicate (court decision)"],
+   253→        note: "A formal court word: when a judge 裁定 something, it is an official ruling. Featured in today's vocabulary section!",
+   254→      },
+   255→      {
+   256→        text: "份",
+   257→        chars: [{ ch: "份", jp: "fan6", senses: ["measure word (documents, copies)"] }],
+   258→        wordJp: "fan6",
+   259→        wordSenses: ["measure word for documents / contracts"],
+   260→        note: "Remember 個 from Lesson 2? Cantonese has dozens of these measure words. 份 is used for flat items and documents: 一份合約 = one contract, 一份報紙 = one newspaper.",
+   261→      },
+   262→      {
+   263→        text: "合約",
+   264→        chars: [
+   265→          { ch: "合", jp: "hap6", senses: ["to join", "to fit together"] },
+   266→          { ch: "約", jp: "joek3", senses: ["agreement", "appointment"] },
+   267→        ],
+   268→        wordJp: "hap6 joek3",
+   269→        wordSenses: ["contract"],
+   270→      },
+   271→      {
+   272→        text: "違憲",
+   273→        chars: [
+   274→          { ch: "違", jp: "wai4", senses: ["to violate", "to go against"] },
+   275→          { ch: "憲", jp: "hin3", senses: ["constitution"] },
+   276→        ],
+   277→        wordJp: "wai4 hin3",
+   278→        wordSenses: ["unconstitutional"],
+   279→      },
+   280→      { text: "，", punct: true },
+   281→      {
+   282→        text: "取消",
+   283→        chars: [
+   284→          { ch: "取", jp: "ceoi2", senses: ["to take", "to fetch"] },
+   285→          { ch: "消", jp: "siu1", senses: ["to disappear", "to eliminate"] },
+   286→        ],
+   287→        wordJp: "ceoi2 siu1",
+   288→        wordSenses: ["to cancel"],
+   289→      },
+   290→      {
+   291→        text: "咗",
+   292→        chars: [{ ch: "咗", jp: "zo2", senses: ["(completed-action particle)"] }],
+   293→        wordJp: "zo2",
+   294→        wordSenses: ["completed action: cancelled"],
+   295→      },
+   296→      {
+   297→        text: "長和",
+   298→        chars: [
+   299→          { ch: "長", jp: "coeng4", senses: ["long", "chief"] },
+   300→          { ch: "和", jp: "wo4", senses: ["and", "harmony"] },
+   301→        ],
+   302→        wordJp: "coeng4 wo4",
+   303→        wordSenses: ["CK Hutchison"],
+   304→      },
+   305→      {
+   306→        text: "嘅",
+   307→        chars: [{ ch: "嘅", jp: "ge3", senses: ["\u2019s", "of (possessive)"] }],
+   308→        wordJp: "ge3",
+   309→        wordSenses: ["possessive particle — like English \u2019s or \u201cof\u201d"],
+   310→        note: "CANTONESE-ONLY character! 長和嘅經營權 = the operating rights OF CK Hutchison. Standard Chinese uses 的 instead. 嘅 tells you immediately that this is written Cantonese.",
+   311→      },
+   312→      {
+   313→        text: "經營權",
+   314→        chars: [
+   315→          { ch: "經", jp: "ging1", senses: ["through", "to manage"] },
+   316→          { ch: "營", jp: "jing4", senses: ["to operate"] },
+   317→          { ch: "權", jp: "kyun4", senses: ["right", "authority"] },
+   318→        ],
+   319→        wordJp: "ging1 jing4 kyun4",
+   320→        wordSenses: ["operating rights, concession"],
+   321→        note: "權 (right/power) appears in all legal-rights words: 人權 human rights, 版權 copyright, 權益 rights and interests.",
+   322→      },
+   323→      { text: "。", punct: true },
+   324→      {
+   325→        text: "幾個月",
+   326→        chars: [
+   327→          { ch: "幾", jp: "gei2", senses: ["several", "how many"] },
+   328→          { ch: "個", jp: "go3", senses: ["measure word"] },
+   329→          { ch: "月", jp: "jyut6", senses: ["month"] },
+   330→        ],
+   331→        wordJp: "gei2 go3 jyut6",
+   332→        wordSenses: ["a few months"],
+   333→      },
+   334→      {
+   335→        text: "之後",
+   336→        chars: [
+   337→          { ch: "之", jp: "zi1", senses: ["(linking word)", "it"] },
+   338→          { ch: "後", jp: "hau6", senses: ["after", "behind"] },
+   339→        ],
+   340→        wordJp: "zi1 hau6",
+   341→        wordSenses: ["after, afterwards"],
+   342→      },
+   343→      { text: "，", punct: true },
+   344→      {
+   345→        text: "營運",
+   346→        chars: [
+   347→          { ch: "營", jp: "jing4", senses: ["to operate"] },
+   348→          { ch: "運", jp: "wan6", senses: ["to transport", "to run"] },
+   349→        ],
+   350→        wordJp: "jing4 wan6",
+   351→        wordSenses: ["operations, to operate"],
+   352→      },
+   353→      {
+   354→        text: "業務",
+   355→        chars: [
+   356→          { ch: "業", jp: "jip6", senses: ["business", "profession"] },
+   357→          { ch: "務", jp: "mou6", senses: ["affairs", "duty"] },
+   358→        ],
+   359→        wordJp: "jip6 mou6",
+   360→        wordSenses: ["business, business affairs"],
+   361→      },
+   362→      {
+   363→        text: "交",
+   364→        chars: [{ ch: "交", jp: "gaau1", senses: ["to hand over", "to deliver", "to exchange"] }],
+   365→        wordJp: "gaau1",
+   366→        wordSenses: ["to hand over / deliver"],
+   367→      },
+   368→      {
+   369→        text: "咗",
+   370→        chars: [{ ch: "咗", jp: "zo2", senses: ["(completed-action particle)"] }],
+   371→        wordJp: "zo2",
+   372→        wordSenses: ["completed action: handed over"],
+   373→      },
+   374→      {
+   375→        text: "畀",
+   376→        chars: [{ ch: "畀", jp: "bei2", senses: ["to, for (giving)"] }],
+   377→        wordJp: "bei2",
+   378→        wordSenses: ["to / for — marks the receiver"],
+   379→        note: "CANTONESE-ONLY character! 交咗畀馬士基 = handed it over TO Maersk. Standard Chinese uses 給. Pattern: verb + 咗 + 畀 + someone = did it to/for someone.",
+   380→      },
+   381→      {
+   382→        text: "丹麥",
+   383→        chars: [
+   384→          { ch: "丹", jp: "daan1", senses: ["red (literary)", "phonetic"] },
+   385→          { ch: "麥", jp: "mak6", senses: ["wheat", "phonetic"] },
+   386→        ],
+   387→        wordJp: "daan1 mak6",
+   388→        wordSenses: ["Denmark"],
+   389→      },
+   390→      {
+   391→        text: "航運",
+   392→        chars: [
+   393→          { ch: "航", jp: "hong4", senses: ["to sail", "navigate"] },
+   394→          { ch: "運", jp: "wan6", senses: ["to transport"] },
+   395→        ],
+   396→        wordJp: "hong4 wan6",
+   397→        wordSenses: ["shipping, maritime transport"],
+   398→      },
+   399→      {
+   400→        text: "馬士基",
+   401→        chars: [
+   402→          { ch: "馬", jp: "maa5", senses: ["horse"] },
+   403→          { ch: "士", jp: "si6", senses: ["scholar", "phonetic"] },
+   404→          { ch: "基", jp: "gei1", senses: ["base", "phonetic"] },
+   405→        ],
+   406→        wordJp: "maa5 si6 gei1",
+   407→        wordSenses: ["Maersk (Danish shipping giant)"],
+   408→      },
+   409→      { text: "。", punct: true },
+   410→    ],
+   411→    // ---------- Paragraph 2 ----------
+   412→    [
+   413→      {
+   414→        text: "上個禮拜",
+   415→        chars: [
+   416→          { ch: "上", jp: "soeng6", senses: ["up", "previous", "on (a surface)"] },
+   417→          { ch: "個", jp: "go3", senses: ["measure word"] },
+   418→          { ch: "禮", jp: "lai5", senses: ["courtesy", "ritual"] },
+   419→          { ch: "拜", jp: "baai3", senses: ["to worship", "to visit"] },
+   420→        ],
+   421→        wordJp: "soeng6 go3 lai5 baai3",
+   422→        wordSenses: ["last week"],
+   423→        note: "禮拜 (literally: worship) is THE colloquial Cantonese word for week — a leftover from calling Sunday the day of worship. 禮拜一 = Monday, 呢個禮拜 = this week, 上個禮拜 = last week.",
+   424→      },
+   425→      { text: "，", punct: true },
+   426→      {
+   427→        text: "長和",
+   428→        chars: [
+   429→          { ch: "長", jp: "coeng4", senses: ["long", "chief"] },
+   430→          { ch: "和", jp: "wo4", senses: ["and", "harmony"] },
+   431→        ],
+   432→        wordJp: "coeng4 wo4",
+   433→        wordSenses: ["CK Hutchison"],
+   434→      },
+   435→      {
+   436→        text: "正式",
+   437→        chars: [
+   438→          { ch: "正", jp: "zing3", senses: ["correct", "main", "proper"] },
+   439→          { ch: "式", jp: "sik1", senses: ["style", "form", "ceremony"] },
+   440→        ],
+   441→        wordJp: "zing3 sik1",
+   442→        wordSenses: ["formally, officially"],
+   443→      },
+   444→      {
+   445→        text: "展開",
+   446→        chars: [
+   447→          { ch: "展", jp: "zin2", senses: ["to unfold", "to exhibit"] },
+   448→          { ch: "開", jp: "hoi1", senses: ["to open"] },
+   449→        ],
+   450→        wordJp: "zin2 hoi1",
+   451→        wordSenses: ["to launch, to begin, to unfold"],
+   452→      },
+   453→      {
+   454→        text: "國際",
+   455→        chars: [
+   456→          { ch: "國", jp: "gwok3", senses: ["country", "nation"] },
+   457→          { ch: "際", jp: "zai3", senses: ["border", "between"] },
+   458→        ],
+   459→        wordJp: "gwok3 zai3",
+   460→        wordSenses: ["international"],
+   461→      },
+   462→      {
+   463→        text: "仲裁",
+   464→        chars: [
+   465→          { ch: "仲", jp: "zyung3", senses: ["to arbitrate", "second"] },
+   466→          { ch: "裁", jp: "coi4", senses: ["to judge", "to decide"] },
+   467→        ],
+   468→        wordJp: "zyung3 coi4",
+   469→        wordSenses: ["arbitration"],
+   470→        note: "Instead of suing in national courts, companies often bring disputes before a neutral private tribunal (e.g. in The Hague or London) — that is 仲裁. Featured in today's vocabulary section!",
+   471→      },
+   472→      { text: "，", punct: true },
+   473→      {
+   474→        text: "話",
+   475→        chars: [{ ch: "話", jp: "waa6", senses: ["to say", "to claim", "speech"] }],
+   476→        wordJp: "waa6",
+   477→        wordSenses: ["to say / to claim"],
+   478→        note: "In Cantonese, 話 does the job of English \u201csaid\u201d — you will see it constantly in news: 佢話 = he said. It replaces the Mandarin word 說 (syut3).",
+   479→      },
+   480→      {
+   481→        text: "巴拿馬",
+   482→        chars: [
+   483→          { ch: "巴", jp: "baa1", senses: ["phonetic"] },
+   484→          { ch: "拿", jp: "naa4", senses: ["to take"] },
+   485→          { ch: "馬", jp: "maa5", senses: ["horse"] },
+   486→        ],
+   487→        wordJp: "baa1 naa4 maa5",
+   488→        wordSenses: ["Panama"],
+   489→      },
+   490→      {
+   491→        text: "摧毀",
+   492→        chars: [
+   493→          { ch: "摧", jp: "ceoi1", senses: ["to break", "to destroy"] },
+   494→          { ch: "毀", jp: "wai2", senses: ["to ruin", "to damage"] },
+   495→        ],
+   496→        wordJp: "ceoi1 wai2",
+   497→        wordSenses: ["to destroy, to wreck"],
+   498→      },
+   499→      {
+   500→        text: "咗",
+   501→        chars: [{ ch: "咗", jp: "zo2", senses: ["(completed-action particle)"] }],
+   502→        wordJp: "zo2",
+   503→        wordSenses: ["completed action: destroyed"],
+   504→      },
+   505→      {
+   506→        text: "佢哋",
+   507→        chars: [
+   508→          { ch: "佢", jp: "keoi5", senses: ["he / she / it"] },
+   509→          { ch: "哋", jp: "dei6", senses: ["(plural marker)"] },
+   510→        ],
+   511→        wordJp: "keoi5 dei6",
+   512→        wordSenses: ["they, them"],
+   513→        note: "CANTONESE pronouns! 佢 = he/she (standard Chinese: 他/她)， and 哋 = plural \u201c-s\u201d: 佢哋 = they, 我哋 = we, 你哋 = you (plural).",
+   514→      },
+   515→      {
+   516→        text: "嘅",
+   517→        chars: [{ ch: "嘅", jp: "ge3", senses: ["\u2019s", "of (possessive)"] }],
+   518→        wordJp: "ge3",
+   519→        wordSenses: ["possessive particle"],
+   520→      },
+   521→      {
+   522→        text: "投資",
+   523→        chars: [
+   524→          { ch: "投", jp: "tau4", senses: ["to throw", "to put in"] },
+   525→          { ch: "資", jp: "zi1", senses: ["capital", "resources"] },
+   526→        ],
+   527→        wordJp: "tau4 zi1",
+   528→        wordSenses: ["investment, to invest"],
+   529→      },
+   530→      { text: "，", punct: true },
+   531→      {
+   532→        text: "要求",
+   533→        chars: [
+   534→          { ch: "要", jp: "jiu3", senses: ["to want", "to need", "must"] },
+   535→          { ch: "求", jp: "kau4", senses: ["to seek", "to beg"] },
+   536→        ],
+   537→        wordJp: "jiu3 kau4",
+   538→        wordSenses: ["to demand, to require"],
+   539→      },
+   540→      {
+   541→        text: "賠償",
+   542→        chars: [
+   543→          { ch: "賠", jp: "pui4", senses: ["to pay compensation", "to lose money"] },
+   544→          { ch: "償", jp: "soeng4", senses: ["to repay", "to compensate"] },
+   545→        ],
+   546→        wordJp: "pui4 soeng4",
+   547→        wordSenses: ["compensation, to compensate"],
+   548→        note: "Featured in today's vocabulary section! 賠 alone also means \u201cto lose money in business\u201d: 賠本 = lose one's capital.",
+   549→      },
+   550→      {
+   551→        text: "超過",
+   552→        chars: [
+   553→          { ch: "超", jp: "ciu1", senses: ["to exceed", "super-"] },
+   554→          { ch: "過", jp: "gwo3", senses: ["to pass", "over"] },
+   555→        ],
+   556→        wordJp: "ciu1 gwo3",
+   557→        wordSenses: ["more than, to exceed"],
+   558→      },
+   559→      {
+   560→        text: "十五億",
+   561→        chars: [
+   562→          { ch: "十", jp: "sap6", senses: ["ten"] },
+   563→          { ch: "五", jp: "ng5", senses: ["five (Lesson 2!)"] },
+   564→          { ch: "億", jp: "jik1", senses: ["hundred million"] },
+   565→        ],
+   566→        wordJp: "sap6 ng5 jik1",
+   567→        wordSenses: ["1.5 billion"],
+   568→        note: "十五 = fifteen — you can now READ this because of Lesson 2! 15 × 億 (100M) = 1.5 billion USD.",
+   569→      },
+   570→      {
+   571→        text: "美元",
+   572→        chars: [
+   573→          { ch: "美", jp: "mei5", senses: ["beautiful", "America"] },
+   574→          { ch: "元", jp: "jyun4", senses: ["dollar"] },
+   575→        ],
+   576→        wordJp: "mei5 jyun4",
+   577→        wordSenses: ["US dollars"],
+   578→      },
+   579→      { text: "，", punct: true },
+   580→      {
+   581→        text: "即係",
+   582→        chars: [
+   583→          { ch: "即", jp: "zik1", senses: ["namely", "exactly"] },
+   584→          { ch: "係", jp: "hai6", senses: ["to be (is/are)"] },
+   585→        ],
+   586→        wordJp: "zik1 hai6",
+   587→        wordSenses: ["that is, in other words, i.e."],
+   588→        note: "CANTONESE phrase: 即係 = \u201cwhich means / in other words\u201d. 係 (hai6) is the Cantonese \u201cto be\u201d (standard Chinese: 是 si6). News writers use 即係 to convert figures for local readers.",
+   589→      },
+   590→      {
+   591→        text: "大約",
+   592→        chars: [
+   593→          { ch: "大", jp: "daai6", senses: ["big"] },
+   594→          { ch: "約", jp: "joek3", senses: ["approximately", "agreement"] },
+   595→        ],
+   596→        wordJp: "daai6 joek3",
+   597→        wordSenses: ["approximately, about"],
+   598→        note: "See 約 in both 合約 (contract) and 大約 (approximately) — one character, related senses: something agreed/fixed vs. roughly.",
+   599→      },
+   600→      {
+   601→        text: "一百一十七億",
+   602→        chars: [
+   603→          { ch: "一", jp: "jat1", senses: ["one (Lesson 2!)"] },
+   604→          { ch: "百", jp: "baak3", senses: ["hundred"] },
+   605→          { ch: "一", jp: "jat1", senses: ["one"] },
+   606→          { ch: "十", jp: "sap6", senses: ["ten"] },
+   607→          { ch: "七", jp: "cat1", senses: ["seven"] },
+   608→          { ch: "億", jp: "jik1", senses: ["hundred million"] },
+   609→        ],
+   610→        wordJp: "jat1 baak3 jat1 sap6 cat1 jik1",
+   611→        wordSenses: ["11.7 billion"],
+   612→        note: "一百 = 100. 一百一十七 = 117. The little 一 before 十 is how Chinese says \u201cand\u201d in numbers: one hundred AND seventeen. 117 × 100M = 11.7 billion HKD.",
+   613→      },
+   614→      {
+   615→        text: "港元",
+   616→        chars: [
+   617→          { ch: "港", jp: "gong2", senses: ["harbour", "Hong Kong"] },
+   618→          { ch: "元", jp: "jyun4", senses: ["dollar"] },
+   619→        ],
+   620→        wordJp: "gong2 jyun4",
+   621→        wordSenses: ["Hong Kong dollars (HKD)"],
+   622→      },
+   623→      { text: "。", punct: true },
+   624→      {
+   625→        text: "長和",
+   626→        chars: [
+   627→          { ch: "長", jp: "coeng4", senses: ["long", "chief"] },
+   628→          { ch: "和", jp: "wo4", senses: ["and", "harmony"] },
+   629→        ],
+   630→        wordJp: "coeng4 wo4",
+   631→        wordSenses: ["CK Hutchison"],
+   632→      },
+   633→      {
+   634→        text: "認為",
+   635→        chars: [
+   636→          { ch: "認", jp: "jing6", senses: ["to recognise", "to admit"] },
+   637→          { ch: "為", jp: "wai4", senses: ["for", "to be", "to consider"] },
+   638→        ],
+   639→        wordJp: "jing6 wai4",
+   640→        wordSenses: ["to believe, to consider, to hold (an opinion)"],
+   641→      },
+   642→      {
+   643→        text: "巴拿馬政府",
+   644→        chars: [
+   645→          { ch: "巴", jp: "baa1", senses: ["phonetic"] },
+   646→          { ch: "拿", jp: "naa4", senses: ["to take"] },
+   647→          { ch: "馬", jp: "maa5", senses: ["horse"] },
+   648→          { ch: "政", jp: "zing3", senses: ["politics", "government"] },
+   649→          { ch: "府", jp: "fu2", senses: ["government office", "mansion"] },
+   650→        ],
+   651→        wordJp: "baa1 naa4 maa5 zing3 fu2",
+   652→        wordSenses: ["the Panamanian government"],
+   653→        note: "政府 (zing3 fu2) = government — used for any government: 香港政府， 中國政府， 美國政府.",
+   654→      },
+   655→      {
+   656→        text: "嘅",
+   657→        chars: [{ ch: "嘅", jp: "ge3", senses: ["\u2019s", "of (possessive)"] }],
+   658→        wordJp: "ge3",
+   659→        wordSenses: ["possessive particle"],
+   660→      },
+   661→      {
+   662→        text: "做法",
+   663→        chars: [
+   664→          { ch: "做", jp: "zou6", senses: ["to do", "to make"] },
+   665→          { ch: "法", jp: "faat3", senses: ["law", "method"] },
+   666→        ],
+   667→        wordJp: "zou6 faat3",
+   668→        wordSenses: ["way of doing things, action, conduct"],
+   669→        note: "Lit. \u201cdo-method\u201d. Here 法 means \u201cmethod\u201d, not \u201claw\u201d — same character, wider meaning: 想法 way of thinking, 講法 explanation.",
+   670→      },
+   671→      {
+   672→        text: "違反",
+   673→        chars: [
+   674→          { ch: "違", jp: "wai4", senses: ["to violate"] },
+   675→          { ch: "反", jp: "faan2", senses: ["to oppose", "to reverse"] },
+   676→        ],
+   677→        wordJp: "wai4 faan2",
+   678→        wordSenses: ["to violate, to breach (a law, contract)"],
+   679→      },
+   680→      {
+   681→        text: "咗",
+   682→        chars: [{ ch: "咗", jp: "zo2", senses: ["(completed-action particle)"] }],
+   683→        wordJp: "zo2",
+   684→        wordSenses: ["completed action: breached"],
+   685→      },
+   686→      {
+   687→        text: "投資協議",
+   688→        chars: [
+   689→          { ch: "投", jp: "tau4", senses: ["to put in"] },
+   690→          { ch: "資", jp: "zi1", senses: ["capital"] },
+   691→          { ch: "協", jp: "hip3", senses: ["to cooperate", "joint"] },
+   692→          { ch: "議", jp: "ji5", senses: ["to discuss", "agreement"] },
+   693→        ],
+   694→        wordJp: "tau4 zi1 hip3 ji5",
+   695→        wordSenses: ["investment agreement"],
+   696→        note: "協議 (hip3 ji5) = agreement/treaty. Compare 合約 (contract, commercial) vs 協議 (agreement, often formal/state level).",
+   697→      },
+   698→      { text: "。", punct: true },
+   699→    ],
+   700→    // ---------- Paragraph 3 ----------
+   701→    [
+   702→      {
+   703→        text: "中國",
+   704→        chars: [
+   705→          { ch: "中", jp: "zung1", senses: ["middle", "central"] },
+   706→          { ch: "國", jp: "gwok3", senses: ["country"] },
+   707→        ],
+   708→        wordJp: "zung1 gwok3",
+   709→        wordSenses: ["China (the Middle Kingdom)"],
+   710→      },
+   711→      {
+   712→        text: "外交部",
+   713→        chars: [
+   714→          { ch: "外", jp: "ngoi6", senses: ["outside", "foreign"] },
+   715→          { ch: "交", jp: "gaau1", senses: ["to exchange", "to hand over"] },
+   716→          { ch: "部", jp: "bou6", senses: ["ministry", "department", "section"] },
+   717→        ],
+   718→        wordJp: "ngoi6 gaau1 bou6",
+   719→        wordSenses: ["Ministry of Foreign Affairs"],
+   720→        note: "Lit. \u201cforeign-exchange ministry\u201d — the Chinese foreign ministry. 交 appears twice today: 交咗 (handed over) and 外交 (diplomacy).",
+   721→      },
+   722→      {
+   723→        text: "回應",
+   724→        chars: [
+   725→          { ch: "回", jp: "wui4", senses: ["to return", "to reply"] },
+   726→          { ch: "應", jp: "jing3", senses: ["to respond", "should"] },
+   727→        ],
+   728→        wordJp: "wui4 jing3",
+   729→        wordSenses: ["to respond, to reply (publicly)"],
+   730→      },
+   731→      {
+   732→        text: "話",
+   733→        chars: [{ ch: "話", jp: "waa6", senses: ["to say"] }],
+   734→        wordJp: "waa6",
+   735→        wordSenses: ["said"],
+   736→      },
+   737→      { text: "，", punct: true },
+   738→      {
+   739→        text: "支持",
+   740→        chars: [
+   741→          { ch: "支", jp: "zi1", senses: ["to prop up", "branch"] },
+   742→          { ch: "持", jp: "cyu4", senses: ["to hold", "to persist"] },
+   743→        ],
+   744→        wordJp: "zi1 cyu4",
+   745→        wordSenses: ["to support, to back"],
+   746→      },
+   747→      {
+   748→        text: "香港企業",
+   749→        chars: [
+   750→          { ch: "香", jp: "hoeng1", senses: ["fragrant"] },
+   751→          { ch: "港", jp: "gong2", senses: ["harbour"] },
+   752→          { ch: "企", jp: "kei5", senses: ["to stand", "enterprise"] },
+   753→          { ch: "業", jp: "jip6", senses: ["business"] },
+   754→        ],
+   755→        wordJp: "hoeng1 gong2 kei5 jip6",
+   756→        wordSenses: ["Hong Kong enterprises, HK companies"],
+   757→      },
+   758→      {
+   759→        text: "用",
+   760→        chars: [{ ch: "用", jp: "jung6", senses: ["to use", "to spend"] }],
+   761→        wordJp: "jung6",
+   762→        wordSenses: ["to use"],
+   763→      },
+   764→      {
+   765→        text: "法律",
+   766→        chars: [
+   767→          { ch: "法", jp: "faat3", senses: ["law"] },
+   768→          { ch: "律", jp: "leot6", senses: ["law", "statute", "rule"] },
+   769→        ],
+   770→        wordJp: "faat3 leot6",
+   771→        wordSenses: ["the law"],
+   772→        note: "律 also appears in 律師 (leoi5 si1) = lawyer — one of the most useful legal words for your Hong Kong reading.",
+   773→      },
+   774→      {
+   775→        text: "途徑",
+   776→        chars: [
+   777→          { ch: "途", jp: "tou4", senses: ["road", "way"] },
+   778→          { ch: "徑", jp: "ging3", senses: ["path", "track"] },
+   779→        ],
+   780→        wordJp: "tou4 ging3",
+   781→        wordSenses: ["channel, avenue, means (to an end)"],
+   782→        note: "Lit. \u201croad-path\u201d. 用法律途徑 = use legal channels — the classic phrase when someone is taking a dispute to court or arbitration.",
+   783→      },
+   784→      {
+   785→        text: "維護",
+   786→        chars: [
+   787→          { ch: "維", jp: "wai4", senses: ["to maintain", "to preserve"] },
+   788→          { ch: "護", jp: "wu6", senses: ["to protect", "to guard"] },
+   789→        ],
+   790→        wordJp: "wai4 wu6",
+   791→        wordSenses: ["to defend, to uphold, to safeguard"],
+   792→      },
+   793→      {
+   794→        text: "自身",
+   795→        chars: [
+   796→          { ch: "自", jp: "zi6", senses: ["self", "from"] },
+   797→          { ch: "身", jp: "san1", senses: ["body", "oneself"] },
+   798→        ],
+   799→        wordJp: "zi6 san1",
+   800→        wordSenses: ["one's own"],
+   801→      },
+   802→      {
+   803→        text: "權益",
+   804→        chars: [
+   805→          { ch: "權", jp: "kyun4", senses: ["right", "authority"] },
+   806→          { ch: "益", jp: "jik1", senses: ["benefit", "interest"] },
+   807→        ],
+   808→        wordJp: "kyun4 jik1",
+   809→        wordSenses: ["rights and interests"],
+   810→        note: "維護自身權益 = safeguard one's own rights and interests — a set phrase in every legal dispute story.",
+   811→      },
+   812→      { text: "。", punct: true },
+   813→      {
+   814→        text: "有",
+   815→        chars: [{ ch: "有", jp: "jau5", senses: ["to have", "there is/are"] }],
+   816→        wordJp: "jau5",
+   817→        wordSenses: ["there is / there are"],
+   818→        note: "有法律學者提醒 = \u201cthere are legal scholars who warn...\u201d News style: 有 + profession = \u201csome X say\u201d. Its opposite is 冇 (mou5) = \u201cdon't have\u201d — pure Cantonese!",
+   819→      },
+   820→      {
+   821→        text: "法律學者",
+   822→        chars: [
+   823→          { ch: "法", jp: "faat3", senses: ["law"] },
+   824→          { ch: "律", jp: "leot6", senses: ["law"] },
+   825→          { ch: "學", jp: "hok6", senses: ["to study", "learning"] },
+   826→          { ch: "者", jp: "ze2", senses: ["person who (-er)"] },
+   827→        ],
+   828→        wordJp: "faat3 leot6 hok6 ze2",
+   829→        wordSenses: ["legal scholars, legal academics"],
+   830→        note: "學者 = scholar (a person who studies). The suffix 者 builds \u201c-person\u201d words: 記者 reporter, 讀者 reader, 作者 author.",
+   831→      },
+   832→      {
+   833→        text: "提醒",
+   834→        chars: [
+   835→          { ch: "提", jp: "tai4", senses: ["to lift", "to mention"] },
+   836→          { ch: "醒", jp: "sing2", senses: ["to wake up", "alert"] },
+   837→        ],
+   838→        wordJp: "tai4 sing2",
+   839→        wordSenses: ["to remind, to warn"],
+   840→        note: "Lit. \u201clift-awake\u201d — to nudge someone awake so they don't forget. Very common in daily Cantonese too.",
+   841→      },
+   842→      { text: "，", punct: true },
+   843→      {
+   844→        text: "國際仲裁程序",
+   845→        chars: [
+   846→          { ch: "國", jp: "gwok3", senses: ["country"] },
+   847→          { ch: "際", jp: "zai3", senses: ["between"] },
+   848→          { ch: "仲", jp: "zyung3", senses: ["to arbitrate"] },
+   849→          { ch: "裁", jp: "coi4", senses: ["to judge"] },
+   850→          { ch: "程", jp: "cing4", senses: ["course", "journey"] },
+   851→          { ch: "序", jp: "zoe6", senses: ["order", "sequence"] },
+   852→        ],
+   853→        wordJp: "gwok3 zai3 zyung3 coi4 cing4 zoe6",
+   854→        wordSenses: ["international arbitration procedures"],
+   855→        note: "程序 (cing4 zoe6) = procedure/process. You will meet it in court stories, app updates (更新程序), and computer programs.",
+   856→      },
+   857→      {
+   858→        text: "複雜",
+   859→        chars: [
+   860→          { ch: "複", jp: "fuk1", senses: ["repeated", "compound"] },
+   861→          { ch: "雜", jp: "zaap6", senses: ["mixed", "miscellaneous"] },
+   862→        ],
+   863→        wordJp: "fuk1 zaap6",
+   864→        wordSenses: ["complicated, complex"],
+   865→      },
+   866→      { text: "，", punct: true },
+   867→      {
+   868→        text: "隨時",
+   869→        chars: [
+   870→          { ch: "隨", jp: "ceoi4", senses: ["to follow", "casual"] },
+   871→          { ch: "時", jp: "si4", senses: ["time", "hour"] },
+   872→        ],
+   873→        wordJp: "ceoi4 si4",
+   874→        wordSenses: ["at any time, easily could"],
+   875→        note: "Lit. \u201cfollowing the time\u201d. 隨時要打幾年 = \u201ccould easily take several years\u201d. In daily life: 隨時搵我 = call me anytime!",
+   876→      },
+   877→      {
+   878→        text: "要",
+   879→        chars: [{ ch: "要", jp: "jiu3", senses: ["to need", "must", "will"] }],
+   880→        wordJp: "jiu3",
+   881→        wordSenses: ["need to / will take"],
+   882→      },
+   883→      {
+   884→        text: "打",
+   885→        chars: [{ ch: "打", jp: "daa2", senses: ["to hit", "to fight", "to play"] }],
+   886→        wordJp: "daa2",
+   887→        wordSenses: ["to hit / to fight"],
+   888→        note: "打 (hit) builds dozens of phrases: 打電話 make a phone call, 打波 play ball, 打工 work a job — and 打官司 fight a lawsuit.",
+   889→      },
+   890→      {
+   891→        text: "幾年",
+   892→        chars: [
+   893→          { ch: "幾", jp: "gei2", senses: ["several"] },
+   894→          { ch: "年", jp: "nin4", senses: ["year"] },
+   895→        ],
+   896→        wordJp: "gei2 nin4",
+   897→        wordSenses: ["several years"],
+   898→      },
+   899→      {
+   900→        text: "官司",
+   901→        chars: [
+   902→          { ch: "官", jp: "gun1", senses: ["official", "government"] },
+   903→          { ch: "司", jp: "si1", senses: ["to manage", "department"] },
+   904→        ],
+   905→        wordJp: "gun1 si1",
+   906→        wordSenses: ["lawsuit, legal case"],
+   907→        note: "Lit. \u201cofficial-manager\u201d — an ancient term for taking a dispute before the officials. Still THE everyday word for lawsuit in Hong Kong. Featured in today's vocabulary section!",
+   908→      },
+   909→      {
+   910→        text: "先至",
+   911→        chars: [
+   912→          { ch: "先", jp: "sin1", senses: ["first", "only then"] },
+   913→          { ch: "至", jp: "zi3", senses: ["until", "arrive", "extremely"] },
+   914→        ],
+   915→        wordJp: "sin1 zi3",
+   916→        wordSenses: ["only then, not until"],
+   917→        note: "CANTONESE phrase! Standard Chinese uses 才 (coi4). 打幾年官司先至有結果 = it will take years of litigation BEFORE there is a result.",
+   918→      },
+   919→      {
+   920→        text: "有",
+   921→        chars: [{ ch: "有", jp: "jau5", senses: ["to have", "there will be"] }],
+   922→        wordJp: "jau5",
+   923→        wordSenses: ["to have"],
+   924→      },
+   925→      {
+   926→        text: "結果",
+   927→        chars: [
+   928→          { ch: "結", jp: "git3", senses: ["to tie", "to conclude"] },
+   929→          { ch: "果", jp: "gwo2", senses: ["fruit", "result"] },
+   930→        ],
+   931→        wordJp: "git3 gwo2",
+   932→        wordSenses: ["result, outcome"],
+   933→        note: "Lit. \u201ctie-fruit\u201d — what the tree finally bears. 結 also appears in 結婚 (git3 fan1) = get married.",
+   934→      },
+   935→      { text: "。", punct: true },
+   936→    ],
+   937→  ],
+   938→};
+   939→
